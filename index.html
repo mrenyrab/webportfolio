@@ -10,24 +10,26 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
 
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<!-- Boostrap -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 	<!-- Link CSS -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body class="bg-light">
-	<!-- start of landing -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<!-- start of navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-info sticky-top">
 		<div class="container">
 			<!-- Brand -->
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand text-dark" href="#landing">
 				<img src="./images/brand-pic.jpg" width="30" height="30" alt="">
 				Jan Baryne Lusabia
 			</a>
 
 			<!-- Toggle Button -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
@@ -35,16 +37,16 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 				<ul class="navbar-nav">
 					<li class="nav-item mr-3">
-						<a class="nav-link active" aria-current="page" href="#landing">Home</a>
+						<a class="nav-link active text-dark" aria-current="page" href="#landing">Home</a>
 					</li>
 					<li class="nav-item mr-3">
-						<a class="nav-link" href="#projects">Projects</a>
+						<a class="nav-link text-dark" href="#projects">Projects</a>
 					</li>
 					<li class="nav-item mr-3">
-						<a class="nav-link" href="#">Tools</a>
+						<a class="nav-link text-dark" href="#tools">Tools</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link text-dark" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -53,60 +55,168 @@
 	<!-- end of navbar -->
 
 	<!-- start of landing -->
-	<div class="container-fluid bg-dark">
-		<div class="row justify-content-center align-items-center p-5" id="landing">
+	<div class="container-fluid bg-dark" id="landing">
+		<div class="row justify-content-center align-items-center p-5" data-aos="fade-right">
 			<div class="col-12 col-lg-4 order-2 order-lg-1 text-center text-lg-left">
 				<h5 class="text-light">Hello, I'm Jan Baryne Lusabia.</h5>
-				<h1 class="text-light">WEB DEVELOPER</h1>
+				<h2 class="text-info">FULLSTACK WEB DEVELOPER</h2>
 				<p class="text-light mt-2 text-justify ">I completed my Bachelor of Science in Information Technology at STI West Negros University in 2021.  I'm interested in the field of Web Developer. If you have any questions or comments, please feel free to contact me below.
 				</p>
 			</div>
 
 			<div class="col-7 col-lg-4 order-1 order-lg-2 text-center text-lg-left p-3">
-				<img class="rounded-circle border border-dark img-fluid" src="./images/brand-pic.jpg" width="300" height="300">
+				<img class="rounded-circle border border-dark img-fluid" src="./images/brand-pic.jpg" width="300" height="300" data-aos="fade-left">
 			</div>
 		</div>
 	</div>
 	<!-- end of landing -->
 
 	<!-- start of projects -->
-	<h1 class="text-center mt-5">Projects</h1>
+	<h1 class="text-center mt-5" id="projects" data-aos="fade-down">Projects</h1>
 	<div class="container-fluid">
-		<div class="row card-deck my-5 justify-content-center" id="projects">
-			<div class="card col-lg-3 col-md-6">
-				<img src="./images/project1.png" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title text-center">Bootstrap Layouts</h5>
-					<p class="card-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
-					</p>
+		<div class="row card-deck my-5 justify-content-center" data-aos="fade-down">
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-md-0 mt-lg-0">
+				<div class="card">
+					<img src="./images/project1.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bootstrap Layouts</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="card col-lg-3 col-md-3">
-				<img src="./images/project2.png" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title text-center">Bootstrap Flex</h5>
-					<p class="card-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
-					</p>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-md-0 mt-lg-0" data-aos="fade-down">
+				<div class="card">
+					<img src="./images/project2.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bootstrap Flex</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="card col-lg-3 col-md-3">
-				<img src="./images/project3.png" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title text-center">Bootstrap Simple Styles</h5>
-					<p class="card-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
-					</p>
+			<div class="col-lg-3 col-md-12 col-sm-12 mt-5 mt-md-5 mt-lg-0" data-aos="fade-down">
+				<div class="card">
+					<img src="./images/project3.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bootstrap Simple Styles</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		
+		<div class="row card-deck my-5 justify-content-center" data-aos="fade-up">
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-md-0 mt-lg-0">
+				<div class="card">
+					<img src="./images/project1.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bootstrap Layouts</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mt-5 mt-md-0 mt-lg-0" data-aos="fade-up">
+				<div class="card">
+					<img src="./images/project2.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bootstrap Flex</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12 mt-5 mt-md-5 mt-lg-0" data-aos="fade-up">
+				<div class="card">
+					<img src="./images/project3.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bootstrap Simple Styles</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Eleifend donec pretium vulputate sapien nec sagittis aliquam.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<!-- end of projects -->
 
+	<!-- start of tools -->
+	<h1 class="text-center mt-5" data-aos="fade-up">Tools I Used</h1>
+
+	<div class="container-fluid" id="tools" data-aos="fade-up">
+		<div class="row justify-content-center">
+			<div>
+				<img width="150" src="images/logo-html5.png"/>
+			</div>
+			<div>
+				<img width="150" src="images/logo-css3.png"/>
+			</div>
+			<div>
+				<img width="150" src="images/logo-javascript.png"/>
+			</div>
+			<div>
+				<img width="150" src="images/logo-bootstrap.png"/>
+			</div>
+			<div>
+				<img width="150" src="images/logo-git.png"/>
+			</div>
+			<div>
+				<img width="150" height="120" src="images/logo-java.png"/>
+			</div>
+		</div>
+	</div>
+	<!-- end of tools -->
+
+	<!-- start of contact -->
+	<h1 class="text-center mt-5" data-aos="fade-up">Keep In Touch</h1>
+
+	<div data-aos="fade-up" class="d-flex justify-content-center mx-5 mt-5" id="contact">
+		<div class="card p-3" style="width: 50rem;">
+			<h3>Drop me a line</h3>
+			<form class="container text-left p-0 mt-3">
+				<div class="form-group">
+					<label for="name">Your Name</label>
+					<input type="text" class="form-control" id="name" aria-describedby="name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" aria-describedby="email">
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea class="form-control" id="message" rows="3"></textarea>
+				</div>
+			</form>
+
+			<div class="text-center">
+				<button type="button" class="btn btn-info text-dark mt-3">Submit</button>
+			</div>
+		</div>
+	</div>
+	<!-- end of contact -->
+
+	<!-- start of footer -->
+	<footer class="d-flex sticky-bottom justify-content-center mt-5 p-2 bg-dark text-white">
+		<div class="mx-3">&copy;  2023 My Website.</div>
+		<div>|</div>
+		<div class="mx-3">All rights reserved.</div>
+	</footer>
+	<!-- end of footer -->
+
 	<!-- JS Bundle -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
